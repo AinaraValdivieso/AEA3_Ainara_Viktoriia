@@ -1,0 +1,25 @@
+GET http://localhost:3001/
+###
+GET http://localhost:3001/usuaris
+###
+GET http://localhost:3001/usuaris/3
+###
+POST http://localhost:3001/usuaris HTTP/1.1
+Content-Type: application/json
+
+{
+    "correo": "smooth@gmail.com",
+    "contrasenya":"trompeta3000",
+    "tipo": "cliente"
+}
+###
+PUT http://localhost:3001/usuaris/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "contrasenya": "waterloo1974",
+    "tipo": "administrador"
+}
+###
+DELETE http://localhost:3001/usuaris/3 HTTP/1.1
+

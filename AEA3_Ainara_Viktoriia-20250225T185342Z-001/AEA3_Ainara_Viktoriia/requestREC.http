@@ -1,0 +1,25 @@
+GET http://localhost:3001/
+###
+GET http://localhost:3001/recursos
+###
+GET http://localhost:3001/recursos/4
+###
+POST http://localhost:3001/recursos HTTP/1.1
+Content-Type: application/json
+
+{
+    "estado": "en uso",
+    "tipo": "Sales",
+    "ETipo": "Capacidad: 7777"
+}
+###
+PUT http://localhost:3001/recursos/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "tipo": "Equipamiento",
+    "ETipo": "No quiero poner especificaciones"
+}
+###
+DELETE http://localhost:3001/recursos/4 HTTP/1.1
+

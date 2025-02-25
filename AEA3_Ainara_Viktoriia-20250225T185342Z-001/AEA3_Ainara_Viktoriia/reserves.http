@@ -1,0 +1,24 @@
+GET http://localhost:3001
+###
+GET http://localhost:3001/reserves/
+###
+POST http://localhost:3001/reserves/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "id_usuario": 1,
+  "id_recurso": 1,
+  "fecha_reserva": "2025-05-10",
+  "hora_inicio": "11:00",
+  "hora_final": "14:30",
+  "estado": "No confirmada"
+}
+###
+PUT http://localhost:3001/reserves/3 HTTP/1.1
+Content-Type: application/json
+
+{
+ "estado": "Confirmada"
+}
+###
+DELETE http://localhost:3001/reserves/3 HTTP/1.1

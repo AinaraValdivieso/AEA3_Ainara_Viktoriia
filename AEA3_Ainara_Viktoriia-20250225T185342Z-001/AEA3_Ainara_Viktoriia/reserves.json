@@ -1,0 +1,1 @@
+{"reserves":[{"id_reserva":1,"id_usuario":1,"id_recurso":1,"fecha_reserva":"2025-02-20","hora_inicio":"10:00","hora_final":"12:00","estado":"confirmada"},{"id_reserva":2,"id_usuario":2,"id_recurso":2,"fecha_reserva":"2025-03-08","hora_inicio":"16:30","hora_final":"20:00","estado":"confirmada"}]}
